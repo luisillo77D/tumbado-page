@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tumbado Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="img/ct.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-zinc-800  text-zinc-200 font-lexend">
+    <div class="h-full w-full ">
+      <nav
+        class="sticky top-0 z-20 flex flex-1 justify-between px-16 w-full h-24 bg-negroct text-zinc-300 py-2 text-2xl"
+      >
+        <div class="flex gap-3 align-middle">
+          <a>
+            <img src="img/ct.png" alt="logo" class="h-1/2  md:h-full" />
+          </a>
+          <div class="py-7 hidden md:block ">
+            <h2>TumbadoPage</h2>
+          </div>
+        </div>
+        <div class="py-7">
+          <ul class="flex gap-8">
+            <li>
+              <a href="#inicios">Inicios</a>
+            </li>
+            <li>
+              <a href="#albumes">Albumes</a>
+            </li>
+            <li>
+              <a href="#top">Top</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section
+        id="inicios"
+        class="flex flex-col xl:flex-row md:flex-col text-zinc-200 bg-rojoct-200 text-clip mx-16 py-16 mt-8 text-lg justify-center items-center rounded-xl" 
+      >
+        <div
+          class="flex w-full lg:w-1/4 justify-center h-full overflow-hidden items-center"
+        >
+          <div
+            class="flex flex-nowrap w-full items-center slider-inner transition ease-in duration-500"
+          >
+            <img
+              src="img/nata.jpg"
+              alt=""
+              class="w-full md:h-fit h-full rounded-full img-carousel object-cover aspect-video"
+            />
+            <img
+              src="img/nata2.jpeg"
+              class="w-full md:h-fit h-full rounded-full img-carousel object-cover aspect-video"
+              alt=""
+            />
+            <img
+              src="img/nataa.jpeg"
+              class="w-full md:h-fit h-full rounded-full img-carousel object-cover aspect-video"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="w-full lg:w-6/12 text-justify p-6 rounded-md font-lexend"> 
+          <h2>
+            Natanael Cano es un talentoso cantante, compositor y músico mexicano
+            conocido por su destacada contribución al género regional mexicano,
+            en particular al subgénero de la música regional urbana o "corridos
+            tumbados". Nacido el 4 de julio de 2000 en Hermosillo, Sonora, Cano
+            ha ganado reconocimiento por su estilo único que combina la
+            tradición de los corridos con influencias contemporáneas del trap y
+            el hip-hop.
+          </h2>
+        </div>
+      </section>
+      <section class="py-16 px-16" id="albumes">
+        <div id="albumes-artista">
+          <h2 class="text-3xl pb-4 ">
+            Álbumes de mi primo<span id="artista-nombre"></span>
+          </h2>
+          <ul
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6  text-zinc-950 font-lexend text-lg"
+          ></ul>
+        </div>
+      </section>
+    <section class="md:flex" id="top">
+      <section class="flex-1">
+        <h2 class="text-center text-5xl py-4 ">Las mas duras</h2>
+        <ul id="top-tracks-list" class="text-zinc-950 flex justify-center flex-wrap flex-col items-center">
+
+        </ul>
+      </section>
+      <section class="flex-1 flex items-center">
+        <div class="w-full flex flex-col justify-center gap-5 mt-6 items-center">
+          <h2 class="text-5xl py-4 text-center">Iconicas</h2>
+          <div class="overflow-hidden w-2/4 ">
+            <ul id="iconic-tracks-list"
+            class="flex w-800 justify-center h-full items-center transition ease-in duration-500 mb-6 "
+          >
+           
+          </ul>
+          </div>
+            
+         
+        </div>
+      </section>
+    </section>
+      <footer class="bg-negroct text-zinc-300 text-center py-4">
+        <p>© 2024 TumbadoPage. Todos los derechos son de sus respectivos dueños.</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
