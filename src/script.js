@@ -288,7 +288,7 @@ obtenerTokenAcceso().then((tokenAcceso) => {
     for (const cancion of canciones) {
       const itemCancion = document.createElement("li");
       itemCancion.classList.add(
-        "w-full", 
+        "w-11/12",  
         "bg-slate-200",
         "hover:bg-slate-600",
         "hover:text-slate-200",
@@ -306,7 +306,6 @@ obtenerTokenAcceso().then((tokenAcceso) => {
         "md:w-2/3",
         "overflow-hidden",
         "text-justify",
-        "text-wrap"
       );
 
       const cancionFront = document.createElement("div");
